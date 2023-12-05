@@ -7,17 +7,15 @@
     <session-factory>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/my-schema</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password">R@simgunay2018</property>
+        <property name="connection.username"></property>
+        <property name="connection.password"></property>
         <property name="connection.pool_size">3</property>
-<!--        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>-->
-        <property name="current_session_context_class">thread</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>        <property name="current_session_context_class">thread</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
-        <!-- mapping class="com.mcnz.jpa.examples.Player" / -->
 
-        <mapping class="org.example.Human"/>
+        <mapping class="org.example.entity.Human"/>
 
     </session-factory>
 </hibernate-configuration>
